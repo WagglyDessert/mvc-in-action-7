@@ -1,3 +1,4 @@
 <% @comedians.each do |comic| %>
-   <h4><%= comic.specials.count %> Specials</h4>
+   <h4><%= comic.specials_count %> Specials</h4>
+<% #I feel like anything that calculates (count, for example) should be in a model method%>
 <% end %>

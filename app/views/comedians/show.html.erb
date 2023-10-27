@@ -1,4 +1,6 @@
 <h1><%= @comedian.name %></h1>
-<% if @comedian.specials.count > 2 && @longest_special > 20 %>
+<% if @comedian.can_average %>
+<% if #@comedian.specials_count > 2 && @comedian.longest_special > 20 %>
+<% #I feel like anything that calculates (count, for example) should be in a model method%>
   <p>Average runtime of all this comedian's specials: <%= @average_special_runtime %></p>
 <% end %>
