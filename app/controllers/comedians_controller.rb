@@ -8,7 +8,7 @@ class ComediansController < ApplicationController
 
   def show
     @comedian = Comedian.find(params[:id])
-    @average_special_runtime = @comedian.average_special_runtime
+    # @average_special_runtime = @comedian.average_special_runtime
     # @average_special_runtime = @comedian.average_special_runtime.round(2)
     #this is good because it separates calculation to a model method
     # @longest_special = @comedian.longest_special
